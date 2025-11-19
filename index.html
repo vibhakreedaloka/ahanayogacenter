@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>End Anxiety with Pranayama | Ahana Pranayama Center</title>
+<link rel="icon" type="image/png" sizes="16x16" href="assets/16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/180x180.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0F172A; --cream:#FFF6E8; --white:#F9FAFB; --teal:#38C7C7; --text-dark:#0F172A;
+  --cyan:#E3EFFC; --yellow:#FFFF00;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Roboto,system-ui,Segoe UI,Arial,sans-serif;background:var(--cream);color:var(--text-dark)}
+h1,h2,h3{font-family:Inter,Montserrat,Arial,sans-serif;margin:0 0 .5rem 0}
+.btn{font-family:Montserrat,Inter,Arial,sans-serif;font-weight:800;padding:14px 22px;border-radius:12px;background:var(--teal);color:#2D0E0E;text-decoration:none;display:inline-block;position:relative;box-shadow:0 0 0 rgba(56,199,199,0.0);transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+@keyframes tealPulse{0%{box-shadow:0 0 0 rgba(56,199,199,0)}50%{box-shadow:0 0 22px 6px rgba(56,199,199,.55)}100%{box-shadow:0 0 0 rgba(56,199,199,0)}}
+.btn.glow{animation:tealPulse 2.2s infinite}
+
+.topbar, .bottombar{position:fixed;left:0;right:0;z-index:9999;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--cream);color:var(--text-dark);border-bottom:1px solid rgba(15,23,42,.1)}
+.topbar img.logo{height:72px}
+.bottombar{bottom:0;top:auto;border-top:1px solid rgba(15,23,42,.1);border-bottom:none}
+.bottombar .note{font-weight:600}
+
+.container{max-width:1200px;margin:0 auto;padding:80px 16px}
+.hero .container{padding-top:24px;padding-bottom:40px}
+.section.light{background:var(--cream);color:var(--text-dark)}
+.section.dark{background:var(--navy);color:var(--white)}
+
+.hero{padding-top:0px; padding-bottom:40px; background:var(--navy); color:var(--white); position:relative}
+.hero h1{font-size:48px; text-align:center; color:#fff700; text-shadow:0 0 4px rgba(255,247,0,.45);}
+.hero .kannada{ text-align:center; margin-top:4px;margin-bottom:14px; opacity:.95; color:#fff700; text-shadow:0 0 4px rgba(255,247,0,.45); font-size:210%; }
+.hero .sub{text-align:center;max-width:900px;margin:4px auto 6px;font-size:24px;color:var(--white)}
+.hero .sub + .sub{margin-top:1px}
+
+.ring{max-width:900px;margin:18px auto 24px;border:2px solid var(--teal);border-radius:20px;padding:18px 20px 36px;position:relative;box-shadow:0 0 18px rgba(56,199,199,.4)}
+.ring .why{text-align:center;font-weight:700;font-size:26px;margin-bottom:4px}
+.ring .why .last{display:block;font-size:40px;color:#fff700;text-shadow:0 0 4px rgba(255,247,0,.45);margin-top:6px}
+.attached-btn{position:absolute;left:50%;transform:translateX(-50%);bottom:-18px}
+
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;margin-top:48px}
+.card{border:2px solid var(--teal);border-radius:16px;padding:16px;box-shadow:0 0 14px rgba(56,199,199,.25)}
+.session li{list-style:none;margin:8px 0;text-align:center;font-size:20px}
+.hero-photo{display:flex;justify-content:center;align-items:center}
+.hero-photo .wrap{position:relative;width:416px;margin:0 auto}
+.hero-photo .circle{border:6px solid var(--teal);border-radius:50%;padding:8px;box-shadow:0 0 18px rgba(56,199,199,.45);overflow:hidden;width:320px;height:320px;background:rgba(255,255,255,.02);margin:0 auto}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.caption{position:absolute;left:50%;transform:translateX(-50%);top:70%;width:92%;border:2px solid var(--teal);border-radius:12px;padding:12px 12px;text-align:center;box-shadow:0 0 12px rgba(56,199,199,.35);background:#0F172A;color:#F9FAFB}
+.caption .cap-name{font-weight:800;font-size:110%;margin-bottom:4px}
+.caption .cap-role{opacity:.95;font-weight:800;font-size:110%;margin-bottom:6px}
+.caption .cap-text{margin-top:8px;line-height:1.35}
+
+.k3{display:grid;gap:18px}
+.k3 .item{background:#E3EFFC;border-radius:16px;padding:16px;color:var(--text-dark)}
+.bens{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.bens .b{background:transparent;border-left:4px solid var(--teal);padding:8px 12px}
+
+ul.icon-list{padding-left:0}
+ul.icon-list li{list-style:none;margin:10px 0;display:flex;gap:8px;align-items:flex-start}
+
+.testi{display:grid;gap:16px}
+.testi .t{border:2px solid var(--teal);border-radius:12px;padding:12px;background:rgba(56,199,199,.06)}
+
+.trainer{display:grid;grid-template-columns:1fr 2fr;gap:24px;align-items:center}
+.trainer .photo{display:flex;justify-content:center}
+.trainer .photo .circle{border:6px solid var(--teal);border-radius:50%;padding:8px;box-shadow:0 0 18px rgba(56,199,199,.45);overflow:hidden;width:260px;height:260px}
+.trainer .photo .circle img{width:100%;height:100%;object-fit:cover;display:block}
+
+.faq{max-width:950px;margin:0 auto}
+.faq .q{border:1px solid #cfe2ff;border-radius:12px;margin:12px 0;overflow:hidden}
+.faq .q summary{background:#E3EFFC;padding:14px 16px;font-weight:700;cursor:pointer;list-style:none}
+.faq .q p{margin:0;padding:14px 16px;background:rgba(255,255,255,.04)}
+details.q{transition:all .3s}
+details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
+
+.footer-min{text-align:center;padding:30px 16px;border-top:1px solid rgba(255,255,255,.1)}
+.final-line2{font-size:2.25em;margin-top:10px;font-weight:800;line-height:1.15}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero-grid{grid-template-columns:1fr;gap:16px}
+  .trainer{grid-template-columns:1fr}
+  .topbar .hide-sm{display:none}
+  .ring .why .last{font-size:34px}
+  .hero h1{font-size:40px}
+  .k3{grid-template-columns:1fr !important}
+  .bens{grid-template-columns:1fr}
+  .test-grid{grid-template-columns:1fr
+      
+
+      .test-grid{display:block;overflow:visible}
+  .test-card{max-width:none;width:100%;min-height:0;margin-bottom:16px}
+  .test-arrow{display:none}
+
+}
+
+}
+
+
+/* Testimonials slider override */
+.testi{
+  position:relative;
+  margin-top:18px;
+}
+.test-strip{
+  display:flex;
+  gap:24px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  padding:8px 4px 4px;
+}
+.test-card{
+  flex:0 0 340px;
+  max-width:340px;
+  min-height:420px;
+  background:#E3EFFC;
+  border-radius:18px;
+  padding:18px 16px 14px;
+  color:var(--text-dark);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  scroll-snap-align:start;
+}
+.test-card .avatar-wrap{
+  margin-bottom:10px;
+}
+.test-card .avatar-ring{
+  width: 144px;
+  height: 144px;
+  border-radius:50%;
+  border:3px solid var(--teal);
+  box-shadow:0 0 14px rgba(56,199,199,.55);
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#000;
+}
+.test-card .avatar-ring img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.test-card .quote{
+  font-size:15px;
+  line-height:1.5;
+  margin:4px 4px 10px;
+}
+.test-card .meta{
+  width:100%;
+  font-size:14px;
+  margin-top:auto;
+}
+.test-card .name{
+  text-align:right;
+  font-weight:700;
+  font-size:15px;
+}
+.test-card .detail{
+  text-align:right;
+  font-size:13px;
+  opacity:.9;
+}
+.test-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:36px;
+  height:36px;
+  border-radius:999px;
+  border:none;
+  background:rgba(15,23,42,.85);
+  color:#FFF6E8;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow:0 8px 18px rgba(15,23,42,.45);
+  z-index:5;
+}
+.test-arrow.left{
+  left:-28px;
+}
+.test-arrow.right{
+  right:-28px;
+}
+.test-arrow span{
+  font-size:22px;
+  line-height:1;
+}
+
+@media (max-width: 900px){
+  .test-strip{
+    display:flex;
+    overflow-x:auto;
+  }
+  .test-card{
+    flex:0 0 100%;
+    max-width:100%;
+    min-height:380px;
+    margin-bottom:0;
+  }
+  .test-arrow{
+    display:flex;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Floating Topbar -->
+<div class="topbar">
+  <div><a href="./"><img class="logo" src="assets/logo.png" alt="Ahana Pranayama Center"></a></div>
+  <a class="btn glow" href="https://tagmango.app/a706157d78">Register for FREE</a>
+</div>
+
+<!-- Section 1: Light (spacer for fixed topbar) -->
+<section class="section light"><div class="container" style="padding-top:80px;padding-bottom:0"></div></section>
+
+<!-- Section 2: Dark (Hero) -->
+<section class="section dark hero">
+  <div class="container">
+    <h1>End Anxiety with Pranayama</h1>
+    <div class="kannada">(Kannada Masterclass for Women)</div>
+    <p class="sub">End Anxiety Naturally. Calm Mind, Deep Sleep, Steady Energy.</p>
+    <p class="sub">5–15-minute Science-led breath sets. No Pills, No Gym.</p>
+
+    <div class="ring">
+      <div class="why">
+        Join and Become Like a Top 1% Successful Women who are Energetic and also Calm &amp; Composed both at Work &amp; Home.
+        <span class="last">Before it's too Late</span>
+      </div>
+      <div class="attached-btn"><a class="btn glow" href="https://tagmango.app/a706157d78">I Want to Be in the Top 1%</a></div>
+    </div>
+
+    <div class="hero-grid">
+      <div class="card session">
+        <ul>
+          <li><strong>Date:</strong> Sat, 06 Dec 2025</li>
+          <li><strong>Time:</strong> 11:00 AM – 12:30 PM IST</li>
+          <li><strong>Mode:</strong> Live on Zoom</li>
+          <li><strong>Language:</strong> Kannada</li>
+        </ul>
+        <div style="text-align:center;margin-top:8px">
+          <a class="btn glow" href="https://tagmango.app/a706157d78">Yes, I Want to End My Anxiety Now!</a>
+          <div style="margin-top:6px;opacity:.9">Limited spots available!</div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="wrap">
+          <div class="circle"><img src="assets/hero.png" alt="Jyothi - Ahana Pranayama Center"></div>
+          <div class="caption">
+            <div class="cap-name">Jyothi T. H.</div>
+            <div class="cap-role">Founder of AhanaPranayamaCenter.com</div>
+            <div class="cap-text">I help South Indian women in IT jobs and homemaking go from stress &amp; fatigue to calm energy with simple pranayama.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Section 3: Light - What you will learn -->
+<section class="section light">
+  <div class="container">
+    <h2 style="text-align:center">What you will learn</h2>
+    <p style="text-align:center;margin:.25rem 0 1rem">In this 60-minute power-packed session, you will walk away with:</p>
+    <div class="k3" style="grid-template-columns:repeat(3,1fr)">
+      <div class="item"><strong>The "Instant Calm" Switch:</strong> A simple breathing technique to use during a stressful work meeting or right before handling family chaos to stop the stress reaction in its tracks.</div>
+      <div class="item"><strong>The "Lights-Out" Breath Routine:</strong> A science-backed method to quiet your mind for deeper, more restorative sleep, so you wake up refreshed, not fatigued.</div>
+      <div class="item"><strong>The "Gut-Brain" Reset:</strong> A desk-friendly breath hack to soothe a nervous stomach and fluttery heart, turning off physical anxiety symptoms in minutes.</div>
+    </div>
+    <div style="text-align:center;margin-top:16px"><a class="btn glow" href="https://tagmango.app/a706157d78">I'm Ready for a Peaceful Mind! Secure My FREE Spot</a></div>
+  </div>
+</section>
+
+<!-- Section 4: Dark - 3 Main Benefits -->
+<section class="section dark">
+  <div class="container">
+    <h2 style="text-align:center">The 3 Main Benefits</h2>
+    <div class="bens">
+      <div class="b">Sleep deeper, wake fresher: fewer mid-night spikes, calmer evenings, brighter mornings.</div>
+      <div class="b">Stress down, focus up: softer “edge,” clear thinking for office + home.</div>
+      <div class="b">Steady energy, kinder mood: gut calm, heart settled, more patience with family.</div>
+    </div>
+    <div style="text-align:center;margin-top:16px"><a class="btn glow" href="https://tagmango.app/a706157d78">YES! I WANT TO END MY ANXIETY NATURALLY</a></div>
+  </div>
+</section>
+
+<!-- Section 5: Light - Not for -->
+<section class="section light">
+  <div class="container">
+    <h2>Who is this webinar NOT for</h2>
+    <ul class="icon-list">
+      <li>❌ You want a magical one-day cure without practicing a simple 5-minute technique.</li>
+      <li>❌ You believe constant stress & burnout are just “normal”.</li>
+      <li>❌ You prefer to numb stress by scrolling or binge-watching instead of fixing the root cause.</li>
+      <li>❌ You're not open to the simple science of how breath controls stress.</li>
+      <li>❌ You think you don’t have even 10 minutes for your peace.</li>
+    </ul>
+    <a class="btn glow" href="https://tagmango.app/a706157d78">I'M READY TO CHANGE — RESERVE MY SPOT</a>
+  </div>
+</section>
+
+<!-- Section 6: Dark - Who it's for -->
+<section class="section dark">
+  <div class="container">
+    <h2>Who is this webinar for</h2>
+    <ul class="icon-list">
+      <li>✅ IT Professional in Bengaluru juggling deadlines & home responsibilities.</li>
+      <li>✅ Dedicated Homemaker managing everyone—except your own well-being.</li>
+      <li>✅ You feel tight chest, upset stomach, headaches, or fluttering heart.</li>
+      <li>✅ You wake at 2–3 a.m. and crash with afternoon brain fog.</li>
+      <li>✅ You want a natural, science-backed way to manage anxiety without pills or gym.</li>
+    </ul>
+    <a class="btn glow" href="https://tagmango.app/a706157d78">YES, THIS IS ME! REGISTER NOW</a>
+  </div>
+</section>
+
+
+
+<!-- Section 7: Light - Testimonials -->
+<section class="section light">
+  <div class="container">
+    <h2 style="text-align:center">Testimonials</h2>
+    <div class="testi">
+      <button class="test-arrow left" type="button" onclick="scrollTests(-1)"><span>‹</span></button>
+      <button class="test-arrow right" type="button" onclick="scrollTests(1)"><span>›</span></button>
+      <div class="test-strip" id="testStrip">
+        <div class="test-card">
+          <div class="avatar-wrap">
+            <div class="avatar-ring">
+              <img src="assets/Diva.png" alt="Testimonial - Dr. Divasri">
+            </div>
+          </div>
+          <div class="quote">I attended Pranayama class for one month. Had a very good experience. I could see the difference after each class. Each and every step was explained clearly and Jyothi made sure that we do it correctly. Very happy with this experience. Looking forward for the next class.</div>
+          <div class="meta">
+            <div class="name">Dr. Divasri</div>
+            <div class="detail">Ayurvedic Doctor, Bengaluru</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="avatar-wrap">
+            <div class="avatar-ring">
+              <img src="assets/Sindhu.jpg" alt="Testimonial - Sindhu M.">
+            </div>
+          </div>
+          <div class="quote">It's really impressive. Lots to learn with indepth knowledge. I personally never happened to get such a good exposure to pranayama. Now I am understanding the importance of it and experiencing the benefits. 🙂 Thank you Jyothi mam 🙏</div>
+          <div class="meta">
+            <div class="name">Sindhu M.</div>
+            <div class="detail">Software Engineer, Bengaluru</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="avatar-wrap">
+            <div class="avatar-ring">
+              <img src="assets/Vibha.png" alt="Testimonial - Vibha S. P.">
+            </div>
+          </div>
+          <div class="quote">I came to know there is one pranayama for each body organ and breathing plays a major role in maintaining our health. Thank you Jyothi ❤️</div>
+          <div class="meta">
+            <div class="name">Vibha S. P.</div>
+            <div class="detail">Software Engineer, Bengaluru</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="avatar-wrap">
+            <div class="avatar-ring">
+              <img src="assets/GirlSilhouette.png" alt="Testimonial - Rekha Shivakumar">
+            </div>
+          </div>
+          <div class="quote">With after doing all the pranayamas that you taught, I feel pleasant and I'll get better sleep and overall it helped me a lot.</div>
+          <div class="meta">
+            <div class="name">Rekha Shivakumar</div>
+            <div class="detail">Housewife, Channagiri</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="avatar-wrap">
+            <div class="avatar-ring">
+              <img src="assets/GirlSilhouette.png" alt="Testimonial - Komala Sahadev">
+            </div>
+          </div>
+          <div class="quote">After 3 weeks of Pranayama with Jyothi, I feel much more calm and peaceful. Earlier I didn’t know the correct way, but now I do, and I can clearly feel the difference. Thank you, Jyothi ❤️</div>
+          <div class="meta">
+            <div class="name">Komala Sahadev</div>
+            <div class="detail">Housewife, Mysuru</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:12px">
+        <a class="btn glow" href="https://tagmango.app/a706157d78">Join the Women Who've Transformed—You Next?</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section 8: Dark - Trainer -->
+<section class="section dark">
+  <div class="container">
+    <h2 style="text-align:center">Meet Your Trainer</h2>
+    <div class="trainer" style="margin-top:14px">
+      <div class="photo"><div class="circle"><img src="assets/trainer.png" alt="Jyothi - Trainer"></div></div>
+      <div>
+        <h3>Jyothi — Certified Pranayama Trainer & Women's Wellness Specialist</h3>
+        <p>After 5 years of traditional yoga teaching, I discovered the missing piece in 2024—the <strong>Science</strong> behind Pranayama. Completing <strong>Level 4 certification in Science of Yoga Therapies</strong> opened my eyes to 60+ breathing techniques and their life-changing benefits.</p>
+        <p>As a woman, I understand the double shift, hormonal challenges, and constant multitasking. My mission: <strong>Help 5,000 South Indian women find peace</strong> through pranayama. Women-only sessions because our stress is different—our solutions should be too.</p>
+        <p><a class="btn glow" href="https://tagmango.app/a706157d78">I Want to Learn from Jyothi! Reserve My Spot</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 9: Light - FAQs -->
+<section class="section light">
+  <div class="container">
+    <h2 style="text-align:center">FAQs</h2>
+    
+    <div class="faq">
+      <details class="q"><summary>I’m a complete beginner. Is this for me?</summary><p>Absolutely! This masterclass is designed for beginners. We start with the very basics, focusing on safety and simple techniques you can use immediately.</p></details>
+      <details class="q"><summary>Will this webinar be in English or Kannada?</summary><p>The entire webinar will be conducted in clear and easy-to-understand Kannada, so you can connect with the concepts deeply.</p></details>
+      <details class="q"><summary>What do I need for the session?</summary><p>Just a quiet space to sit comfortably for an hour, a stable internet connection, and an open mind. No special equipment is needed.</p></details>
+      <details class="q"><summary>I have health issues (BP, asthma). Is pranayama safe for me?</summary><p>The techniques taught in this introductory masterclass are generally safe. However, we always recommend consulting with your doctor before starting any new health practice.</p></details>
+      <details class="q"><summary>What if I can't attend live? Will I get a recording?</summary><p>Attending Live is the best way to get more benefits out of the webinar. Hence, we don’t provide recordings. We request you to attend our next webinar.</p></details>
+      <details class="q"><summary>How is this different from meditation or general yoga?</summary><p>This focuses specifically on the science of breath (pranayama) to directly influence your nervous system. It's a more direct and faster tool for managing anxiety and stress than general meditation or yoga.</p></details>
+      <details class="q"><summary>Do I need any yoga experience or flexibility?</summary><p>No—beginners and non-yogis are welcome! All breath routines are easy to follow.</p></details>
+      <details class="q"><summary>I’m a working woman, can I fit this into my routine?</summary><p>Absolutely—all methods fit daily life and need only 5-15 minutes.</p></details>
+      <details class="q"><summary>Is this suitable for homemakers managing kids and elders?</summary><p>Yes—the practices are designed for busy women, at work or at home. You will see how spending 5-15 minutes daily will increase your work speed and complete the tasks much faster with more quality output.</p></details>
+      <details class="q"><summary>Can breath work help long-term stress and poor sleep?</summary><p>Yes! Research shows regular pranayama reduces stress and improves sleep over weeks. You will also see the results within a week’s time.</p></details>
+      <details class="q"><summary>Will my family think this is worth my time?</summary><p>Share the benefits—calmer you means a happier home! Many sisters report better family balance after doing pranayama on a daily basis.</p></details>
+      <details class="q"><summary>Can I join if I'm not from South India?</summary><p>Yes, but it's tailored for South Indian women—anyone seeking natural anxiety relief is welcome as long as you understand Kannada! Because the masterclass will be in Kannada language.</p></details>
+    </div>
+
+  </div>
+</section>
+
+<!-- Section 10: Dark - Final CTA & Footer -->
+<section class="section dark">
+  <div class="container" style="text-align:center">
+    <h2 style="margin-bottom:0">You Can “End Anxiety with Pranayama” OR You Can “Live with Anxiety without Pranayama”.</h2>
+    <div class="final-line2">The Choice is Yours.</div>
+    <p style="margin:12px 0"><a class="btn glow" href="https://tagmango.app/a706157d78">I want to End My Anxiety. Register ME</a></p>
+    <img src="assets/logo.png" alt="Ahana Pranayama Center" style="height:69px;margin-top:8px" />
+    <div style="margin:10px 0">
+      <a href="privacy-policy.html" target="_blank" rel="noopener" style="color:#93c5fd">Privacy Policy</a> •
+      <a href="refund-policy.html" target="_blank" rel="noopener" style="color:#93c5fd">Refund Policy</a> •
+      <a href="terms.html" target="_blank" rel="noopener" style="color:#93c5fd">Terms & Conditions</a>
+    </div>
+    <div class="footer-min">Copyright © 2025 KreedaLoka Private Limited | All Rights Reserved.</div>
+  </div>
+</section>
+
+<!-- Floating Bottom bar -->
+<div class="bottombar">
+  <div class="note">Live seats are almost gone—lock yours NOW</div>
+  <a class="btn glow" href="https://tagmango.app/a706157d78">Register for FREE</a>
+</div>
+
+
+<script>
+function scrollTests(dir){
+  var strip = document.getElementById('testStrip');
+  if(!strip) return;
+  var card = strip.querySelector('.test-card');
+  var amount = card ? (card.offsetWidth + 24) : 320;
+  strip.scrollBy({left: dir * amount, behavior: 'smooth'});
+}
+</script>
+
+
+<script>
+function scrollTests(dir){
+  var strip = document.getElementById('testStrip');
+  if(!strip) return;
+  var card = strip.querySelector('.test-card');
+  if(!card) return;
+  var amount = card.offsetWidth + 24;
+  strip.scrollBy({left: dir * amount, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>
