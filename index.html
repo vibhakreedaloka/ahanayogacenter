@@ -7,13 +7,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/180x180.png">
-<link href="assets/favicon-32x32.png" rel="icon">
-  <meta property="og:title" content="Ahana Pranayama">
-<meta property="og:description" content="Ahana Yoga Center - End Anxiety with Pranayama">
-<meta property="og:image" content="https://ahanapranayamacenter.com/preview.png">
-<meta property="og:url" content="https://ahanapranayamacenter.com">
-<meta property="og:type" content="website">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -21,7 +14,7 @@
   --cyan:#E3EFFC; --yellow:#FFFF00;
 }
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:Roboto,system-ui,Segoe UI,Arial,sans-serif;background:var(--cream);color:var(--text-dark)}
+html,body{margin:0;padding:0;font-family:Roboto,system-ui,Segoe UI,Arial,sans-serif;background:var(--cream);color:var(--text-dark);overflow-x:hidden;}
 h1,h2,h3{font-family:Inter,Montserrat,Arial,sans-serif;margin:0 0 .5rem 0}
 .btn{font-family:Montserrat,Inter,Arial,sans-serif;font-weight:800;padding:14px 22px;border-radius:12px;background:var(--teal);color:#2D0E0E;text-decoration:none;display:inline-block;position:relative;box-shadow:0 0 0 rgba(56,199,199,0.0);transition:transform .15s}
 .btn:hover{transform:translateY(-1px)}
@@ -56,7 +49,7 @@ h1,h2,h3{font-family:Inter,Montserrat,Arial,sans-serif;margin:0 0 .5rem 0}
 .hero-photo .wrap{position:relative;width:416px;margin:0 auto}
 .hero-photo .circle{border:6px solid var(--teal);border-radius:50%;padding:8px;box-shadow:0 0 18px rgba(56,199,199,.45);overflow:hidden;width:320px;height:320px;background:rgba(255,255,255,.02);margin:0 auto}
 .hero-photo img{width:100%;height:100%;object-fit:cover}
-.caption{position:absolute;left:50%;transform:translateX(-50%);top:70%;width:92%;border:2px solid var(--teal);border-radius:12px;padding:12px 12px;text-align:center;box-shadow:0 0 12px rgba(56,199,199,.35);background:#0F172A;color:#F9FAFB}
+.caption{position:absolute;left:50%;transform:translateX(-50%);top:70%;width:110%;border:2px solid var(--teal);border-radius:12px;padding:12px 12px;text-align:center;box-shadow:0 0 12px rgba(56,199,199,.35);background:#0F172A;color:#F9FAFB}
 .caption .cap-name{font-weight:800;font-size:110%;margin-bottom:4px}
 .caption .cap-role{opacity:.95;font-weight:800;font-size:110%;margin-bottom:6px}
 .caption .cap-text{margin-top:8px;line-height:1.35}
@@ -118,7 +111,7 @@ details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
   gap:24px;
   overflow-x:auto;
   scroll-snap-type:x mandatory;
-  padding:8px 4px 4px;
+  padding:8px 32px 4px;
 }
 .test-card{
   flex:0 0 340px;
@@ -192,10 +185,10 @@ details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
   z-index:5;
 }
 .test-arrow.left{
-  left:-28px;
+  left:8px;
 }
 .test-arrow.right{
-  right:-28px;
+  right:8px;
 }
 .test-arrow span{
   font-size:22px;
@@ -216,6 +209,26 @@ details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
   .test-arrow{
     display:flex;
   }
+}
+
+@media (max-width: 700px){
+  .topbar{padding:6px 10px;}
+  .topbar img.logo{height:56px;}
+  .topbar .btn{font-size:13px;padding:8px 10px;}
+
+  .bottombar{padding:6px 10px;flex-wrap:wrap;row-gap:6px;}
+  .bottombar .note{font-size:13px;flex:1 1 100%;text-align:center;margin-bottom:4px;}
+  .bottombar .btn{width:100%;max-width:none;text-align:center;font-size:14px;}
+
+  .attached-btn .btn{width:100%;max-width:none;text-align:center;font-size:13px;padding:8px 10px;}
+
+  .hero-grid{grid-template-columns:1fr;gap:16px;}
+  .hero-photo .wrap{width:100%;max-width:320px;}
+  .hero-photo .circle{width:260px;height:260px;}
+
+  .card.session ul{padding-left:0;}
+  .card.session li{font-size:18px;}
+  .caption{width:110%;}
 }
 </style>
 </head>
@@ -353,6 +366,7 @@ details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
             <div class="detail">Ayurvedic Doctor, Bengaluru</div>
           </div>
         </div>
+
         <div class="test-card">
           <div class="avatar-wrap">
             <div class="avatar-ring">
@@ -362,9 +376,10 @@ details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
           <div class="quote">It's really impressive. Lots to learn with indepth knowledge. I personally never happened to get such a good exposure to pranayama. Now I am understanding the importance of it and experiencing the benefits. 🙂 Thank you Jyothi mam 🙏</div>
           <div class="meta">
             <div class="name">Sindhu M.</div>
-            <div class="detail">Software Engineer, Bengaluru</div>
+            <div class="detail">Data Steward, Bengaluru</div>
           </div>
         </div>
+
         <div class="test-card">
           <div class="avatar-wrap">
             <div class="avatar-ring">
@@ -374,9 +389,10 @@ details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
           <div class="quote">I came to know there is one pranayama for each body organ and breathing plays a major role in maintaining our health. Thank you Jyothi ❤️</div>
           <div class="meta">
             <div class="name">Vibha S. P.</div>
-            <div class="detail">Software Engineer, Bengaluru</div>
+            <div class="detail">Data Steward, Bengaluru</div>
           </div>
         </div>
+
         <div class="test-card">
           <div class="avatar-wrap">
             <div class="avatar-ring">
@@ -389,6 +405,7 @@ details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
             <div class="detail">Housewife, Channagiri</div>
           </div>
         </div>
+
         <div class="test-card">
           <div class="avatar-wrap">
             <div class="avatar-ring">
@@ -442,7 +459,11 @@ details.q[open]{box-shadow:0 8px 24px rgba(15,23,42,.35)}
       <details class="q"><summary>Can breath work help long-term stress and poor sleep?</summary><p>Yes! Research shows regular pranayama reduces stress and improves sleep over weeks. You will also see the results within a week’s time.</p></details>
       <details class="q"><summary>Will my family think this is worth my time?</summary><p>Share the benefits—calmer you means a happier home! Many sisters report better family balance after doing pranayama on a daily basis.</p></details>
       <details class="q"><summary>Can I join if I'm not from South India?</summary><p>Yes, but it's tailored for South Indian women—anyone seeking natural anxiety relief is welcome as long as you understand Kannada! Because the masterclass will be in Kannada language.</p></details>
+    
+    <div style="text-align:center;margin-top:24px">
+      <a class="btn glow" href="https://tagmango.app/a706157d78">I still have questions, but I will ask them Live. Reserve My FREE Seat Now.</a>
     </div>
+</div>
 
   </div>
 </section>
