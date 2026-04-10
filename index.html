@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="kn">
 <head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '26825608543729671');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=26825608543729671&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>30-Day Stress Relief Pranayama Course | Ahana Pranayama Center</title>
@@ -55,7 +72,7 @@ h2, h3, h4 { font-family: 'Poppins', sans-serif; }
 /* ─── BUTTONS ─── */
 .btn-gold {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 15px;
   background: var(--gold);
   color: var(--white);
@@ -153,6 +170,12 @@ h2, h3, h4 { font-family: 'Poppins', sans-serif; }
   margin-bottom: 8px;
 }
 .hero-headline span { color: var(--gold); }
+.mob-break { display: none; }
+@media (max-width: 600px) {
+  .mob-break { display: block; }
+  .hero-headline br:not(.mob-break) { display: none; }
+  .hero-headline { font-size: clamp(32px, 9vw, 42px); }
+}
 
 .hero-sub {
   text-align: center;
@@ -259,20 +282,20 @@ h2, h3, h4 { font-family: 'Poppins', sans-serif; }
 }
 .trainer-caption .cap-name {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--parchment);
   font-weight: 700;
 }
 .trainer-caption .cap-role {
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  font-size: 17px;
   color: var(--gold);
   margin-top: 4px;
   font-weight: 600;
 }
 .trainer-caption .cap-tagline {
   font-family: 'Lato', sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   color: var(--teal-muted);
   margin-top: 8px;
   line-height: 1.5;
@@ -560,7 +583,7 @@ h2, h3, h4 { font-family: 'Poppins', sans-serif; }
   margin-bottom: 4px;
 }
 .price-current {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: clamp(48px, 8vw, 72px);
   color: var(--gold);
   font-weight: 800;
@@ -742,7 +765,7 @@ details.faq-item .faq-body {
     </div>
 
     <h1 class="hero-headline">
-      <span>Stress Relief</span> in 30 Days<br>Through Pranayama
+      <span>Stress Relief</span><br class="mob-break"> in 30 Days<br>Through Pranayama
     </h1>
     <p class="hero-sub">
       By Certified Pranayama Trainer Jyothi — Live Online · In Kannada
